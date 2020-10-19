@@ -1,0 +1,30 @@
+#login_form{
+     margin-top: 150px;
+}
+
+#other_form{
+margin-top: 50px
+}
+
+
+.fontz{
+ font-family: 'Ranchers', cursive;
+}
+.fontzh2{
+font-family: 'Ranchers', cursive;
+text-align: center;
+}
+.center {
+  margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: solid;
+    padding: inherit;
+    width:400px;
+    height:400px;
+}
+
+
+
+
+

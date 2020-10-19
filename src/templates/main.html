@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tinder Movies</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../static/main_style.css" />
+  </head>
+  <body>
+    <div class="categories">
+      <div class="sidenav">
+        <a href="/profile" id="profile">Welcome, {{name}}!</a>
+        <a href="/getfavourites">My Favourites</a>
+        <a href="/getliked">Liked</a>
+        <a href="/getunwatched">Unwatched</a>
+        <button class="dropdown-btn">
+          Categories
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="/gettopmovies">Top Rated Movies</a>
+          <a href="/getbollywood">Top Bollywood Movies</a>
+        </div>
+        <a href="/logout">Log Out</a>
+      </div>
+    </div>
+    <!-- Search form -->
+    <div class="tutorial">
+      <form method="POST" action="/search" class="form-inline search_bar">
+        <button class="btn btn-outline-primary mr-2" type="submit">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+        <input
+          name="search"
+          id="search"
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </form>
+      <div class="img">
+        <a href="{{m.link}}"><img src="{{m.poster}}" alt=""/></a>
+
+        <p>{{m.title}}</p>
+        <p>Rated: {{m.rating}}</p>
+        <!-- AddToAny BEGIN -->
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u={{m.link}}"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://twitter.com/home?status={{m.link}} "
+          class="fa fa-twitter"
+        ></a>
+        <!-- AddToAny END -->
+      </div>
+      <div class="child">
+        <form method="post" action="/addtounwatched/{{m._id}}">
+          <button type="submit" class="btn btn-primary unwatched_button btns">
+            <ion-icon name="eye-off-outline" class="unwatched"></ion-icon>
+          </button>
+        </form>
+        <form method="post" action="/unlike/{{m._id}}">
+          <button type="submit" class="btn btn-primary decline_button btns">
+            <ion-icon name="ban-outline" class="decline"></ion-icon>
+          </button>
+        </form>
+        <form method="post" action="/addtofavourites/{{m._id}}">
+          <button type="submit" class="btn btn-primary favourite_button btns">
+            <ion-icon name="heart-outline" class="heart"></ion-icon>
+          </button>
+        </form>
+        <form method="post" action="/like/{{m._id}}">
+          <button type="submit" class="btn btn-primary like_button btns">
+            <ion-icon name="checkmark-outline" class="like"></ion-icon>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="../static/app.js"></script>
+  </body>
+</html>
