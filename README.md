@@ -2,7 +2,8 @@
 
 How to start the app -
 1.
-Download project from Github
+Download project from Github.
+Next
 Do one of the following:
  On the Welcome Screen of PyCharm, click the Open link.
  From the main menu of PyCharm, select File |Open.
@@ -11,8 +12,10 @@ If you select a non-PyCharm directory, PyCharm creates a new IDE project and set
 Click OK.
 
 2.
-Open a project from Gitfrom on PyCharm:﻿
+Open a project from Gitfrom on PyCharm:
+
 Do one of the following:
+
  On the Welcome Screen of PyCharm, click the Get from Version Control link.
  From the main menu, select VCS | Get from Version Control.
 Select the version control system where your project is stored. Here it is Git:
