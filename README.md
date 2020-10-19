@@ -34,6 +34,10 @@ The website uses a built in machine-learning algorithm to show movies to the use
 Usage -
 
 The homepage of the website is where you can login in to the TinderforMovies website or if you are a new member, create a new account. One you have done that, you are redirected to the main page where you can use the website ust like Tinder.
+The heart button means "Add to Favourites"
+the tick button means "Like"
+the eye button means "Add to Unwatched"
+the button with thecut sign - "Dislike"
 
 Tools Used - 
 
