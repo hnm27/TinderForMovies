@@ -22,6 +22,8 @@ Select the version control system where your project is stored. Here it is Git:
 Specify the path to the repository and select the directory to which a project will be cloned. Alternatively, you can select GitHub on the left, login using your credentials, and select any project you want to work with.
 Click Clone.
 
+Finally complie the program on PyCharm and run app.py. That will open the webapp on your local server on the specified port 1234.
+
 
 
 Assignment Report -
