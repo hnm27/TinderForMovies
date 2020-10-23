@@ -1,9 +1,9 @@
 # TinderForMovies
 
-How to start the app -
-1.
+How to start the app - You can use 1 on the following methods :
 
-Download project from Github.
+
+1.Download project from Github.
 Next
 Do one of the following:
  On the Welcome Screen of PyCharm, click the Open link.
@@ -12,18 +12,18 @@ In the Open File or Project dialog that opens, find location of the desired proj
 If you select a non-PyCharm directory, PyCharm creates a new IDE project and sets up a Python interpreter.
 Click OK.
 
-2.
-Open a project from Gitfrom on PyCharm:
+OR
+
+2.Open a project from Gitfrom on PyCharm:
 
 Do one of the following:
-
  On the Welcome Screen of PyCharm, click the Get from Version Control link.
  From the main menu, select VCS | Get from Version Control.
 Select the version control system where your project is stored. Here it is Git:
 Specify the path to the repository and select the directory to which a project will be cloned. Alternatively, you can select GitHub on the left, login using your credentials, and select any project you want to work with.
 Click Clone.
 
-Finally complie the program on PyCharm and run app.py. That will open the webapp on your local server on the specified port 1234.
+Finally, complie the program on PyCharm and run app.py. That will open the webapp on your local server on the specified port 1234.
 
 
 
