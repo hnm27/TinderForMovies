@@ -2,6 +2,7 @@
 
 How to start the app -
 1.
+
 Download project from Github.
 Next
 Do one of the following:
