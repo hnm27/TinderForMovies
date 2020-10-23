@@ -40,6 +40,8 @@ the tick button means "Like"
 the eye button means "Add to Unwatched"
 the button with thecut sign - "Dislike"
 
+To share a movie trailer, you can click on the Facebook/Twitter button on the home page. The home page also has a search bar to search movie trailers from all over the world.
+
 Tools Used - 
 
 Back-End - Python,Flask,MongoDB
