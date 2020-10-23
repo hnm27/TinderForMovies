@@ -14,7 +14,7 @@ Click OK.
 
 OR
 
-2.Open a project from Gitfrom on PyCharm:
+2.Open a project from Github on PyCharm:
 
 Do one of the following:
  On the Welcome Screen of PyCharm, click the Get from Version Control link.
