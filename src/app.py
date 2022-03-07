@@ -17,8 +17,8 @@ import random
 
 
 app = Flask(__name__)
-app.secret_key = "9493789279"
-api_key = "AIzaSyC99J7-NuIa0iy2XC2FU7LzmOQAIkTJpxQ"
+app.secret_key = "Enter Flask app key"
+api_key = "Enter Youtube API Key"
 youtube = build('youtube', 'v3', developerKey=api_key)
 cache=Cache()
 app.config['CACHE_TYPE'] = 'simple'
